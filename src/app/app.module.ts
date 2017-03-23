@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { RegistrationBarComponent } from './registration-bar/registration-bar.component';
+import { AlertModule } from 'ng2-bootstrap';
+ 
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { RegistrationBarComponent } from './registration-bar/registration-bar.co
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AlertModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
