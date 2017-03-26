@@ -8,8 +8,6 @@ import { BootstrapModalModule } from 'angular2-modal/plugins/bootstrap';
 
 import { AppComponent } from './app.component';
 import { RegistrationBarComponent } from './registration-bar/registration-bar.component';
-import { AlertModule } from 'ng2-bootstrap';
-import { ModalComponent } from './modal/modal.component';
  
  
 
