@@ -3,23 +3,31 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { ModalModule } from 'angular2-modal';
+import { BootstrapModalModule } from 'angular2-modal/plugins/bootstrap';
+
 import { AppComponent } from './app.component';
 import { RegistrationBarComponent } from './registration-bar/registration-bar.component';
 import { AlertModule } from 'ng2-bootstrap';
+import { ModalComponent } from './modal/modal.component';
+ 
  
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationBarComponent
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AlertModule.forRoot()
+    ModalModule.forRoot(),
+    BootstrapModalModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+
+  bootstrap: [AppComponent],
+ 
 })
 export class AppModule { }
